@@ -21,7 +21,7 @@
         }
     ];
 
-    let nextId = 3;
+    let nextId = Math.max(...items.map(i => i.id)) + 1;
 
     function handleAdd() {
         let i = {
@@ -127,6 +127,5 @@
         padding: 10px;
         border-radius: @radius;
         color: var(--gray-9);
-        margin-right: 10px;
     }
 </style>

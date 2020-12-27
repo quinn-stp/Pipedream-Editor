@@ -11,22 +11,23 @@
 
     let dragging = false;
 
-    const GRID=55;
+    const UNIT=55;
+    const GRID=UNIT/4;
 
-    const coords = spring({x: x*GRID, y: y*GRID}, {
+    const coords = spring({x: x*UNIT, y: y*UNIT}, {
         stiffness: 0.8,
         damping: 0.8
     });
 
     coords.subscribe((c) => {
         if(dragging) {
-            x = Math.round(c.x / GRID);
-            y = Math.round(c.y / GRID);
+            x = Math.round(c.x / GRID) / 4;
+            y = Math.round(c.y / GRID) / 4;
         }
     });
 
     $: if(!dragging) {
-        coords.set({ x: x*GRID, y: y*GRID })
+        coords.set({ x: x*UNIT, y: y*UNIT })
     }
 
     function handleDragStart(e) {
@@ -78,5 +79,7 @@
         color: var(--gray-9);
         border: solid 2px var(--gray-4);
         border-radius: 5px;
+        top: 1px;
+        left: 1px;
     }
 </style>

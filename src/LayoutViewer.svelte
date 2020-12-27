@@ -3,7 +3,7 @@
     import Key from './Key.svelte';
 
     export let keys:KeyModel[];
-    export let layer:string;
+    export let layer:number;
 
     $: selected = keys.filter(k => k.selected)[0];
 
@@ -17,7 +17,6 @@
         return () => selectKey(key);
     }
 </script>
-
 
 <div class="key-container">
     {#each keys as key (key.id)}
@@ -38,15 +37,29 @@
         <pattern id="grid-vertical" width=55 height=100% patternUnits="userSpaceOnUse">
             <line x1=0 y1=0 x2=0 y2=100% class="grid-line"/>
         </pattern>
+
+        <pattern id="grid-minor-horizontal" width=100% height={55/4} patternUnits="userSpaceOnUse">
+            <line x1=0 y1=0 x2=100% y2=0 class="grid-line-minor"/>
+        </pattern>
+        <pattern id="grid-minor-vertical" width={55/4} height=100% patternUnits="userSpaceOnUse">
+            <line x1=0 y1=0 x2=0 y2=100% class="grid-line-minor"/>
+        </pattern>
+
+        
         <rect x=0 y=0 width=100% height=100% fill="url(#grid-horizontal)"/>
         <rect x=0 y=0 width=100% height=100% fill="url(#grid-vertical)"/>
+        <rect x=0 y=0 width=100% height=100% fill="url(#grid-minor-horizontal)"/>
+        <rect x=0 y=0 width=100% height=100% fill="url(#grid-minor-vertical)"/>
     </svg>
 </div>
 
 <style>
+    .grid-line-minor {
+        stroke: var(--gray-1);
+        stroke-width: 1px;
+    }
     .grid-line {
-        stroke: var(--gray-2);
-        fill: var(--gray-2);
+        stroke: var(--gray-3);
         stroke-width: 1px;
     }
 

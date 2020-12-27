@@ -11,7 +11,7 @@
     {#if type == 'text'}
         <input type=text bind:value/>
     {:else if type == 'number'}
-        <input type=number bind:value/>
+        <input type=number step=0.25 bind:value/>
     {/if}
 </div>
 

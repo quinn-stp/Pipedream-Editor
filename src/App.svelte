@@ -6,28 +6,28 @@
     import type { KeyModel } from './LayoutEditor.svelte';
 
     let layout:KeyModel[] = [
-        {
-            id: 0,
-            labels: {
-                Main: 'Q'
-            },
-            selected: false,
-            x: 0,
-            y: 0,
-            width: 1,
-            height: 1
-        },
-        {
-            id: 1,
-            labels: {
-                Main: 'W'
-            },
-            selected: false,
-            x: 1,
-            y: 0,
-            width: 1,
-            height: 1
-        }
+        // {
+        //     id: 0,
+        //     labels: {
+        //         Main: 'Q'
+        //     },
+        //     selected: false,
+        //     x: 0,
+        //     y: 0,
+        //     width: 1,
+        //     height: 1
+        // },
+        // {
+        //     id: 1,
+        //     labels: {
+        //         Main: 'W'
+        //     },
+        //     selected: false,
+        //     x: 1,
+        //     y: 0,
+        //     width: 1,
+        //     height: 1
+        // }
     ];
 </script>
 
