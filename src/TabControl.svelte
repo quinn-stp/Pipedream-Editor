@@ -20,8 +20,8 @@
     });
 </script>
 
-<div class="row tab-control-container">
-    <div class="column">
+<div class="tab-control-container">
+    <div class="column tab-container">
         {#each $tabs as tab}
             <div class="tab" class:tab-selected={tab == $selectedTab} on:click={() => $selectedTab = tab}>
                 <div class="tab-icon-container">
@@ -39,9 +39,14 @@
 </div>
 
 <style>
+
     @radius: 5px;
     @tab-height: 3em;
     @tab-width: 10em;
+
+    .tab-container {
+        margin-right: 10px;
+    }
 
     .tab-icon-container {
         height: @tab-height * 0.8;
@@ -63,7 +68,7 @@
     }
 
     .tab-control-container {
-        border-radius: @radius;
+        flex-direction: row;
         margin: 20px;
         overflow: hidden;
     }
