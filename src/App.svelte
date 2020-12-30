@@ -1,4 +1,6 @@
 <script>
+    import './style.less';
+
     import LayoutEditor from './LayoutEditor.svelte'
     import PipelineEditor from './PipelineEditor.svelte';
     import TabControl from './TabControl.svelte';
@@ -31,19 +33,17 @@
     ];
 </script>
 
-<main>
-    <TabControl>
-        <Tab tab="Layout">
-            <LayoutEditor bind:keys={layout}/>
-        </Tab>
-        <Tab tab="Pipeline">
-            <PipelineEditor keys={layout}/>
-        </Tab>
-    </TabControl>
-</main>
+<TabControl>
+    <Tab tab="Layout">
+        <LayoutEditor bind:keys={layout}/>
+    </Tab>
+    <Tab tab="Pipeline">
+        <PipelineEditor keys={layout}/>
+    </Tab>
+</TabControl>
 
 <style>
-    .gradient-loop(@start, @end, @color, @i: 1) when (@i <= 8) {
+    /* .gradient-loop(@start, @end, @color, @i: 1) when (@i <= 8) {
         --@{color}-@{i}: mix(@end, @start, @i*10);
         .gradient-loop(@start, @end, @color, (@i + 1));
     }
@@ -58,9 +58,9 @@
         .gradient(#181818, #eee, gray);
         .gradient(#181818, rgb(151, 187, 253), blue);
         .gradient(#181818, rgb(255, 69, 69), red);
-    }
+    } */
 
-    :global(.fill) {
+    /* :global(.fill) {
         width: 100%;
         height: 100%;
     }
@@ -89,17 +89,17 @@
         flex-direction: column;
         align-items: stretch;
         flex-grow: 1;
-    }
+    } */
 
-	:global(main) {
+	/* main {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         background-color: var(--gray-0);
-	}
+	} */
 
-    :global(div) {
+    /* :global(div) {
         display: flex;
         user-select: none;
     }
@@ -110,5 +110,5 @@
 
     :global(body) {
         padding: 0;
-    }
+    } */
 </style>

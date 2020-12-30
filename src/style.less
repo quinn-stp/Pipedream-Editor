@@ -1,0 +1,75 @@
+@import './variables.less';
+
+.gradient-loop(@start, @end, @color, @i: 1) when (@i <= 8) {
+    --@{color}-@{i}: mix(@end, @start, @i*10);
+    .gradient-loop(@start, @end, @color, (@i + 1));
+}
+
+.gradient(@start, @end, @color) {
+    --@{color}-0: @start;
+    .gradient-loop(@start, @end, @color);
+    --@{color}-9: @end;
+}
+
+:root {
+    .gradient(#181818, #eee, gray);
+    .gradient(#181818, rgb(151, 187, 253), blue);
+    .gradient(#181818, rgb(255, 69, 69), red);
+}
+
+body {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    align-content: stretch;
+    padding: 0;
+    background-color: var(--gray-0);
+}
+
+div {
+    display: flex;
+    user-select: none;
+}
+
+input {
+    display: flex;
+}
+
+// .grow {
+//     flex-grow: 1;
+// }
+
+.row {
+    flex-direction: row;
+
+    &>* {
+        margin-right: @spacing;
+        margin-left: @spacing;
+    }
+
+    &>*:first-child {
+        margin-left: 0;
+    }
+
+    &>*:last-child {
+        margin-right: 0;
+    }
+}
+
+.column {
+    flex-direction: column;
+
+    &>* {
+        margin-top: @spacing;
+        margin-bottom: @spacing;
+    }
+
+    &>*:first-child {
+        margin-top: 0;
+    }
+
+    &>*:last-child {
+        margin-bottom: 0;
+    }
+}
+

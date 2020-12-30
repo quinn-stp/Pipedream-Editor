@@ -20,7 +20,7 @@
     });
 </script>
 
-<div class="row grow tab-control-container">
+<div class="row tab-control-container">
     <div class="column">
         {#each $tabs as tab}
             <div class="tab" class:tab-selected={tab == $selectedTab} on:click={() => $selectedTab = tab}>
@@ -35,9 +35,7 @@
             </div>
         {/each}
     </div>
-    <div class="fill tab-content-container">
-        <slot/>
-    </div>
+    <slot/>
 </div>
 
 <style>
@@ -62,10 +60,6 @@
 
     .tab-selected > .tab-icon-container {
         background-color: var(--blue-6) !important;
-    }
-
-    .tab-content-container {
-        margin-left: 10px;
     }
 
     .tab-control-container {

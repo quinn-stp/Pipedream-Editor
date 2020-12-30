@@ -116,7 +116,6 @@
 
 <style>
     @radius: 5px;
-
     .dropdown {
         margin-top: 5px;
         position: absolute;
@@ -227,7 +226,6 @@
         border: 1px solid var(--gray-5);
         border-radius: @radius;
         flex-grow: 1;
-        margin-bottom: 10px;
         flex-direction: column;
     }
 
@@ -243,7 +241,6 @@
         color: var(--gray-9);
         padding: 10px;
         border-radius: @radius;
-        margin-left: 10px;
         align-items: stretch;
     }
 
