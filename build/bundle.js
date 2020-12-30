@@ -675,7 +675,7 @@ var app = (function () {
       }
     }
 
-    var css_248z = ":root {\n  --gray-0: #181818;\n  --gray-1: #2d2d2d;\n  --gray-2: #434343;\n  --gray-3: #585858;\n  --gray-4: #6e6e6e;\n  --gray-5: #838383;\n  --gray-6: #989898;\n  --gray-7: #aeaeae;\n  --gray-8: #c3c3c3;\n  --gray-9: #eee;\n  --blue-0: #181818;\n  --blue-1: #25282f;\n  --blue-2: #313946;\n  --blue-3: #3e495d;\n  --blue-4: #4b5974;\n  --blue-5: #586a8b;\n  --blue-6: #647aa1;\n  --blue-7: #718ab8;\n  --blue-8: #7e9acf;\n  --blue-9: #97bbfd;\n  --red-0: #181818;\n  --red-1: #2f1d1d;\n  --red-2: #462121;\n  --red-3: #5d2626;\n  --red-4: #742a2a;\n  --red-5: #8c2f2f;\n  --red-6: #a33333;\n  --red-7: #ba3838;\n  --red-8: #d13c3c;\n  --red-9: #ff4545;\n}\nbody {\n  display: flex;\n  justify-content: stretch;\n  align-items: stretch;\n  align-content: stretch;\n  padding: 0;\n  background-color: var(--gray-0);\n}\ndiv {\n  display: flex;\n  user-select: none;\n}\ninput {\n  display: flex;\n}\n.row {\n  flex-direction: row;\n}\n.row > * {\n  margin-right: 5px;\n  margin-left: 5px;\n}\n.row > *:first-child {\n  margin-left: 0;\n}\n.row > *:last-child {\n  margin-right: 0;\n}\n.column {\n  flex-direction: column;\n}\n.column > * {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.column > *:first-child {\n  margin-top: 0;\n}\n.column > *:last-child {\n  margin-bottom: 0;\n}\n";
+    var css_248z = ":root {\n  --gray-0: #181818;\n  --gray-1: #2d2d2d;\n  --gray-2: #434343;\n  --gray-3: #585858;\n  --gray-4: #6e6e6e;\n  --gray-5: #838383;\n  --gray-6: #989898;\n  --gray-7: #aeaeae;\n  --gray-8: #c3c3c3;\n  --gray-9: #eee;\n  --blue-0: #181818;\n  --blue-1: #25282f;\n  --blue-2: #313946;\n  --blue-3: #3e495d;\n  --blue-4: #4b5974;\n  --blue-5: #586a8b;\n  --blue-6: #647aa1;\n  --blue-7: #718ab8;\n  --blue-8: #7e9acf;\n  --blue-9: #97bbfd;\n  --red-0: #181818;\n  --red-1: #2f1d1d;\n  --red-2: #462121;\n  --red-3: #5d2626;\n  --red-4: #742a2a;\n  --red-5: #8c2f2f;\n  --red-6: #a33333;\n  --red-7: #ba3838;\n  --red-8: #d13c3c;\n  --red-9: #ff4545;\n}\nbody {\n  display: flex;\n  justify-content: stretch;\n  align-items: stretch;\n  align-content: stretch;\n  padding: 0;\n  background-color: var(--gray-0);\n}\ndiv {\n  display: flex;\n  user-select: none;\n}\ninput {\n  display: flex;\n}\n.grow {\n  flex-grow: 1;\n}\n.row {\n  flex-direction: row;\n}\n.row > * {\n  margin-right: 5px;\n  margin-left: 5px;\n}\n.row > *:first-child {\n  margin-left: 0;\n}\n.row > *:last-child {\n  margin-right: 0;\n}\n.column {\n  flex-direction: column;\n}\n.column > * {\n  margin-top: 5px;\n  margin-bottom: 5px;\n}\n.column > *:first-child {\n  margin-top: 0;\n}\n.column > *:last-child {\n  margin-bottom: 0;\n}\n";
     styleInject(css_248z);
 
     var css_248z$1 = "input[type=text].svelte-1sozhzk.svelte-1sozhzk{background-color:unset;margin:0px;border:none;color:inherit;flex-grow:1;padding:0;pointer-events:none;width:0}.list-item-selected.svelte-1sozhzk input[type=text].svelte-1sozhzk{pointer-events:unset}.list-item-selected.svelte-1sozhzk.svelte-1sozhzk{color:var(--gray-2);background-color:var(--gray-7) !important}.list-item.svelte-1sozhzk.svelte-1sozhzk:hover{background-color:var(--gray-2)}.list-item.svelte-1sozhzk:hover .remove-button.svelte-1sozhzk{visibility:visible}.list-item.svelte-1sozhzk.svelte-1sozhzk{border-radius:5px;margin-bottom:5px;align-self:stretch;align-items:center;padding:10px}.remove-button.svelte-1sozhzk.svelte-1sozhzk{stroke-width:2px;stroke:var(--red-8);stroke-linecap:round;visibility:collapse;cursor:pointer}.add-button.svelte-1sozhzk.svelte-1sozhzk{border-radius:1.125em;width:2.25em;height:2.25em;align-items:center;justify-content:center}.add-button.svelte-1sozhzk.svelte-1sozhzk:hover{background-color:var(--gray-2)}.title-container.svelte-1sozhzk.svelte-1sozhzk{width:100%;margin-bottom:10px;align-items:center}.list-container.svelte-1sozhzk.svelte-1sozhzk{background-color:var(--gray-1);padding:10px;border-radius:5px;color:var(--gray-9)}";
@@ -2182,7 +2182,7 @@ var app = (function () {
     	}
     }
 
-    var css_248z$5 = ".dropdown.svelte-1x2w3z0.svelte-1x2w3z0{margin-top:5px;position:absolute;top:2em;left:0;width:8em;background-color:var(--gray-2);border-radius:5px;color:var(--gray-9);flex-direction:column;overflow:hidden;visibility:hidden}.dropdown-item.svelte-1x2w3z0.svelte-1x2w3z0{padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px}.dropdown-item.svelte-1x2w3z0.svelte-1x2w3z0:hover{background-color:var(--gray-3)}polygon.svelte-1x2w3z0.svelte-1x2w3z0{stroke:var(--gray-9);stroke-width:1px;fill:var(--gray-9)}.button.svelte-1x2w3z0.svelte-1x2w3z0{color:var(--gray-9);height:2em;padding-left:1em;padding-right:1em;align-items:center;justify-content:center;background-color:var(--blue-5);margin-left:5px;margin-right:5px;border-radius:5px}.button.svelte-1x2w3z0.svelte-1x2w3z0:disabled{background-color:var(--gray-5)}.button-group.svelte-1x2w3z0 .button.svelte-1x2w3z0{margin:0}.button.icon.svelte-1x2w3z0.svelte-1x2w3z0{padding:0;width:2em}.button.danger.svelte-1x2w3z0.svelte-1x2w3z0{background-color:var(--red-5)}.button.danger.svelte-1x2w3z0.svelte-1x2w3z0:hover{background-color:var(--red-6)}.button.svelte-1x2w3z0.svelte-1x2w3z0:hover{background-color:var(--blue-6)}.button.svelte-1x2w3z0.svelte-1x2w3z0:first-child{margin-left:0}.button.svelte-1x2w3z0.svelte-1x2w3z0:last-child{margin-right:0}.button-group.svelte-1x2w3z0 .button.svelte-1x2w3z0{border-radius:0}.button-group.svelte-1x2w3z0 .button.svelte-1x2w3z0:first-child{border-top-left-radius:5px;border-bottom-left-radius:5px}.button-group.svelte-1x2w3z0 .button.svelte-1x2w3z0:last-child{border-top-right-radius:5px;border-bottom-right-radius:5px}.button-group.svelte-1x2w3z0.svelte-1x2w3z0{margin-left:5px;margin-right:5px}.button-group.svelte-1x2w3z0.svelte-1x2w3z0:first-child{margin-left:0}.button-group.svelte-1x2w3z0.svelte-1x2w3z0:last-child{margin-right:0}.layout-container.svelte-1x2w3z0.svelte-1x2w3z0{position:relative;border:1px solid var(--gray-5);border-radius:5px;flex-grow:1;flex-direction:column}.layout-button-row.svelte-1x2w3z0.svelte-1x2w3z0{flex-direction:row;position:absolute;bottom:10px;right:10px}.control-box.svelte-1x2w3z0.svelte-1x2w3z0{background-color:var(--gray-1);color:var(--gray-9);padding:10px;border-radius:5px;align-items:stretch}.controls-container.svelte-1x2w3z0.svelte-1x2w3z0{height:15em;align-self:stretch;align-items:stretch}";
+    var css_248z$5 = ".dropdown.svelte-1duovs6.svelte-1duovs6{margin-top:5px;position:absolute;top:2em;left:0;width:8em;background-color:var(--gray-2);border-radius:5px;color:var(--gray-9);flex-direction:column;overflow:hidden;visibility:hidden}.dropdown-item.svelte-1duovs6.svelte-1duovs6{padding-left:10px;padding-right:10px;padding-top:5px;padding-bottom:5px}.dropdown-item.svelte-1duovs6.svelte-1duovs6:hover{background-color:var(--gray-3)}polygon.svelte-1duovs6.svelte-1duovs6{stroke:var(--gray-9);stroke-width:1px;fill:var(--gray-9)}.button.svelte-1duovs6.svelte-1duovs6{color:var(--gray-9);height:2em;padding-left:1em;padding-right:1em;align-items:center;justify-content:center;background-color:var(--blue-5);margin-left:5px;margin-right:5px;border-radius:5px}.button.svelte-1duovs6.svelte-1duovs6:disabled{background-color:var(--gray-5)}.button-group.svelte-1duovs6 .button.svelte-1duovs6{margin:0}.button.icon.svelte-1duovs6.svelte-1duovs6{padding:0;width:2em}.button.danger.svelte-1duovs6.svelte-1duovs6{background-color:var(--red-5)}.button.danger.svelte-1duovs6.svelte-1duovs6:hover{background-color:var(--red-6)}.button.svelte-1duovs6.svelte-1duovs6:hover{background-color:var(--blue-6)}.button.svelte-1duovs6.svelte-1duovs6:first-child{margin-left:0}.button.svelte-1duovs6.svelte-1duovs6:last-child{margin-right:0}.button-group.svelte-1duovs6 .button.svelte-1duovs6{border-radius:0}.button-group.svelte-1duovs6 .button.svelte-1duovs6:first-child{border-top-left-radius:5px;border-bottom-left-radius:5px}.button-group.svelte-1duovs6 .button.svelte-1duovs6:last-child{border-top-right-radius:5px;border-bottom-right-radius:5px}.button-group.svelte-1duovs6.svelte-1duovs6{margin-left:5px;margin-right:5px}.button-group.svelte-1duovs6.svelte-1duovs6:first-child{margin-left:0}.button-group.svelte-1duovs6.svelte-1duovs6:last-child{margin-right:0}.layout-container.svelte-1duovs6.svelte-1duovs6{position:relative;border:1px solid var(--gray-5);border-radius:5px;flex-grow:1;flex-direction:column}.layout-button-row.svelte-1duovs6.svelte-1duovs6{flex-direction:row;position:absolute;bottom:10px;right:10px}.control-box.svelte-1duovs6.svelte-1duovs6{background-color:var(--gray-1);color:var(--gray-9);padding:10px;border-radius:5px;align-items:stretch}.controls-container.svelte-1duovs6.svelte-1duovs6{height:15em}";
     styleInject(css_248z$5);
 
     /* src/LayoutEditor.svelte generated by Svelte v3.31.0 */
@@ -2552,40 +2552,40 @@ var app = (function () {
     			div12 = element("div");
     			t17 = text("Layer Settings\n                ");
     			if (if_block1) if_block1.c();
-    			attr_dev(div0, "class", "button svelte-1x2w3z0");
+    			attr_dev(div0, "class", "button svelte-1duovs6");
     			add_location(div0, file$4, 44, 20, 1149);
     			attr_dev(polygon, "points", "0,0 12,0 6,6");
-    			attr_dev(polygon, "class", "svelte-1x2w3z0");
+    			attr_dev(polygon, "class", "svelte-1duovs6");
     			add_location(polygon, file$4, 49, 28, 1366);
     			attr_dev(svg, "width", "12");
     			attr_dev(svg, "height", "6");
     			add_location(svg, file$4, 48, 24, 1314);
-    			attr_dev(div1, "class", "button icon svelte-1x2w3z0");
+    			attr_dev(div1, "class", "button icon svelte-1duovs6");
     			add_location(div1, file$4, 47, 20, 1264);
-    			attr_dev(div2, "class", "button-group svelte-1x2w3z0");
+    			attr_dev(div2, "class", "button-group svelte-1duovs6");
     			add_location(div2, file$4, 43, 16, 1104);
-    			attr_dev(div3, "class", "dropdown-item svelte-1x2w3z0");
+    			attr_dev(div3, "class", "dropdown-item svelte-1duovs6");
     			add_location(div3, file$4, 54, 20, 1539);
-    			attr_dev(div4, "class", "dropdown-item svelte-1x2w3z0");
+    			attr_dev(div4, "class", "dropdown-item svelte-1duovs6");
     			add_location(div4, file$4, 57, 20, 1647);
-    			attr_dev(div5, "class", "dropdown-item svelte-1x2w3z0");
+    			attr_dev(div5, "class", "dropdown-item svelte-1duovs6");
     			add_location(div5, file$4, 60, 20, 1756);
-    			attr_dev(div6, "class", "dropdown-item svelte-1x2w3z0");
+    			attr_dev(div6, "class", "dropdown-item svelte-1duovs6");
     			add_location(div6, file$4, 63, 20, 1862);
-    			attr_dev(div7, "class", "dropdown svelte-1x2w3z0");
+    			attr_dev(div7, "class", "dropdown svelte-1duovs6");
     			add_location(div7, file$4, 53, 16, 1496);
-    			attr_dev(div8, "class", "button danger svelte-1x2w3z0");
+    			attr_dev(div8, "class", "button danger svelte-1duovs6");
     			attr_dev(div8, "disabled", div8_disabled_value = !/*selected*/ ctx[3]);
     			add_location(div8, file$4, 67, 16, 1989);
-    			attr_dev(div9, "class", "layout-button-row svelte-1x2w3z0");
+    			attr_dev(div9, "class", "layout-button-row svelte-1duovs6");
     			add_location(div9, file$4, 42, 12, 1058);
-    			attr_dev(div10, "class", "layout-container svelte-1x2w3z0");
+    			attr_dev(div10, "class", "layout-container svelte-1duovs6");
     			add_location(div10, file$4, 39, 8, 945);
-    			attr_dev(div11, "class", "column grow control-box svelte-1x2w3z0");
+    			attr_dev(div11, "class", "column grow control-box svelte-1duovs6");
     			add_location(div11, file$4, 75, 12, 2313);
-    			attr_dev(div12, "class", "column grow control-box svelte-1x2w3z0");
+    			attr_dev(div12, "class", "column grow control-box svelte-1duovs6");
     			add_location(div12, file$4, 88, 12, 2940);
-    			attr_dev(div13, "class", "row controls-container svelte-1x2w3z0");
+    			attr_dev(div13, "class", "row controls-container svelte-1duovs6");
     			add_location(div13, file$4, 73, 8, 2171);
     			attr_dev(div14, "class", "column");
     			add_location(div14, file$4, 38, 4, 918);
