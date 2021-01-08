@@ -45,11 +45,23 @@
             <line x1=0 y1=0 x2=0 y2=100% class="grid-line-minor"/>
         </pattern>
 
+        <pattern id="grid" width=55 height=55 patternUnits=userSpaceOnUse>
+            <line x1=0 y1=0 x2=55 y2=0 class=grid-line/>
+            <line x1=0 y1=0 x2=0 y2=55 class=grid-line/>
+            <line x1={55/4} y1=0 x2={55/4} y2=55 class=grid-line-minor/>
+            <line x1={55/4*2} y1=0 x2={55/4*2} y2=55 class=grid-line-minor/>
+            <line x1={55/4*3} y1=0 x2={55/4*3} y2=55 class=grid-line-minor/>
+            <line x1=0 y1={55/4} x2=55 y2={55/4} class=grid-line-minor/>
+            <line x1=0 y1={55/4*2} x2=55 y2={55/4*2} class=grid-line-minor/>
+            <line x1=0 y1={55/4*3} x2=55 y2={55/4*3} class=grid-line-minor/>
+        </pattern>
+
         
-        <rect x=0 y=0 width=100% height=100% fill="url(#grid-horizontal)"/>
+        <rect x=0 y=0 width=100% height=100% fill="url(#grid)"/>
+        <!-- <rect x=0 y=0 width=100% height=100% fill="url(#grid-horizontal)"/>
         <rect x=0 y=0 width=100% height=100% fill="url(#grid-vertical)"/>
         <rect x=0 y=0 width=100% height=100% fill="url(#grid-minor-horizontal)"/>
-        <rect x=0 y=0 width=100% height=100% fill="url(#grid-minor-vertical)"/>
+        <rect x=0 y=0 width=100% height=100% fill="url(#grid-minor-vertical)"/> -->
     </svg>
 </div>
 
