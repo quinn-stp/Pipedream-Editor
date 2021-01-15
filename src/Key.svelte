@@ -8,6 +8,7 @@
     export let height:number = 1;
     export let selected:boolean = false;
     export let label:string;
+    export let transparent:boolean = false;
 
     let dragging = false;
 
@@ -52,6 +53,7 @@
     use:draggable
     class="key-background"
     class:selected
+    class:transparent
     on:click
     on:dragstart={handleDragStart}
     on:dragmove={handleDragMove}
@@ -62,6 +64,10 @@
 </div>
 
 <style>
+    .transparent {
+        color: var(--gray-6);
+    }
+
     .selected {
         background-color: var(--blue-3) !important;
         border-color: var(--blue-5) !important;

@@ -9,6 +9,7 @@
 <script>
     import { clickOutside } from '../ClickOutside';
 
+    export let disabled:boolean = false;
     export let options:DropdownItem[] = [];
     let selected:DropdownItem = options[0];
     let open = false;
@@ -29,10 +30,10 @@
 
 <div class=container>
     <div class=row-group>
-        <button class=blue on:click={selected?.onClick}>
+        <button class=blue on:click={selected?.onClick} {disabled}>
             {selected?.buttonText}
         </button>
-        <button class=blue on:click={toggleOpen}>
+        <button class=blue on:click={toggleOpen} {disabled}>
             <svg width=12 height=6>
                 <polygon points="0,0 12,0 6,6"/>
             </svg>
@@ -48,38 +49,16 @@
 </div>
 
 <style>
-    @import (reference) '../style.less';
-
     .container {
         position: relative;
     }
 
-    .dropdown:extend(.col-group all) {
-        margin-top: 5px;
-        position: absolute;
-        top: 2em;
-        left: 0;
-        width: 8em;
-        visibility: collapse;
-
-        z-index: 999999;
-
-        &.open {
-            visibility: visible;
-        }
-    }
-
-    .dropdown-item {
-        background-color: var(--gray-2);
-        justify-content: flex-start;
-        &:hover {
-            background-color: var(--gray-3);
-        }
-    }
-
     polygon {
-        stroke: var(--gray-9);
         stroke-width: 1px;
         fill: var(--gray-9);
+
+        button:disabled & {
+            fill: var(--gray-6);
+        }
     }
 </style>

@@ -13,7 +13,7 @@
     });
 </script>
 
-<div class="fill" class:hidden={$selectedTab != tab}>
+<div class=grow class:hidden={$selectedTab != tab}>
     <slot/>
 </div>
 

@@ -6,31 +6,25 @@
 </script>
 
 <script>
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+
     export let title:string;
-
-    export let selected:ListItem;
-
-    export let items:ListItem[] = [
-        {
-            id: 0,
-            name: 'Main'
-        },
-        {
-            id: 1,
-            name: 'Num'
-        }
-    ];
+    export let items:readonly ListItem[] = [ ];
+    export let selected:ListItem = items[0];
 
     let nextId = Math.max(...items.map(i => i.id)) + 1;
 
     function handleAdd() {
-        let i = {
-            id: nextId++,
-            name: ''
-        };
+        dispatch('add');
+        // let i = {
+        //     id: nextId++,
+        //     name: ''
+        // };
 
-        items = [ ...items, i ];
-        selected = i;
+        // items = [ ...items, i ];
+        // selected = i;
     }
 
     if(!selected) selected = items[0];

@@ -152,3 +152,27 @@ button:extend(.clickable all) {
         border-bottom-right-radius: @radius;
     }
 }
+
+.dropdown:extend(.col-group all) {
+    margin-top: @spacing;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    min-width: 8em;
+    visibility: collapse;
+
+    z-index: 999999;
+
+    &.open {
+        visibility: visible;
+    }
+}
+
+.dropdown-item {
+    background-color: var(--gray-2);
+    justify-content: flex-start;
+
+    &:hover {
+        background-color: var(--gray-3) !important;
+    }
+}

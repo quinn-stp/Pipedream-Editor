@@ -68,6 +68,7 @@
     }
 
     .tab-control-container {
+        flex-grow: 1;
         flex-direction: row;
         margin: 20px;
         overflow: hidden;

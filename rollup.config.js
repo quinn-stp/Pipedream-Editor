@@ -35,14 +35,15 @@ function serve() {
 export default {
 	input: 'src/main.ts',
 	output: {
-		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+        file: 'public/build/bundle.js',
+        sourcemap: true
 	},
 	plugins: [
 		svelte({
 			preprocess: sveltePreprocess({
+                sourceMap: !production,
                 defaults: {
                     script: 'typescript',
                     style: 'less'
@@ -50,11 +51,9 @@ export default {
             }),
 			compilerOptions: {
 				// enable run-time checks when not in production
-				dev: !production
+                dev: !production,
+                // sourcemap: !production
             },
-            css: css => {
-				css.write('public/bundle.css');
-			}
         }),
         
         postcss(),
