@@ -1,15 +1,12 @@
-<script context=module>
-    export const tabsKey = {};
-</script>
-
 <script>
+    import { TABS_KEY } from './Tab.svelte';
     import { setContext, onMount } from 'svelte';
     import { writable } from 'svelte/store';
 
     const tabs = writable([]);
     const selectedTab = writable(null);
 
-    setContext(tabsKey, {
+    setContext(TABS_KEY, {
         tabs,
         selectedTab
     });

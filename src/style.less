@@ -11,10 +11,14 @@
     --@{color}-9: @end;
 }
 
+@background: #f0d4a0;
+
 :root {
-    .gradient(#181818, #eee, gray);
-    .gradient(#181818, rgb(151, 187, 253), blue);
-    .gradient(#181818, rgb(255, 69, 69), red);
+    // .gradient(#181818, #eee, gray);
+    // .gradient(#181818, #eee, gray);
+    .gradient(@background, #181818, gray);
+    .gradient(@background, rgb(0, 81, 255), blue);
+    .gradient(@background, rgb(255, 69, 69), red);
 }
 
 body {

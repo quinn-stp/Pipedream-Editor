@@ -1,10 +1,12 @@
+<script context=module>
+    export const TABS_KEY = {};
+</script>
 <script>
-    import { tabsKey } from './TabControl.svelte'
     import { getContext, onMount } from 'svelte';
 
     export let tab:string;
 
-    let context = getContext<any>(tabsKey);
+    let context = getContext<any>(TABS_KEY);
     let tabs = context.tabs;
     let selectedTab = context.selectedTab;
 
