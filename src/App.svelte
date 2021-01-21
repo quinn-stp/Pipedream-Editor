@@ -3,10 +3,12 @@
 
     import TimelineTabControl from './Components/Tabs/TimelineTabControl.svelte';
     import Tab from './Components/Tabs/Tab.svelte';
+    import BoardSelectionPage from './BoardSelectionPage.svelte';
 </script>
 
 <TimelineTabControl>
-    <Tab tab="Device Selection">
+    <Tab tab="Board Selection">
+        <BoardSelectionPage/>
     </Tab>
     <Tab tab="Pipeline">
     </Tab>

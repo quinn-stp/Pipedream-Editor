@@ -15,7 +15,7 @@
     });
 </script>
 
-<div class=grow class:hidden={$selectedTab != tab}>
+<div class:hidden={$selectedTab != tab}>
     <slot/>
 </div>
 

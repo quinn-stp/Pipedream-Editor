@@ -6,7 +6,7 @@
 </script>
 
 <script>
-    import { clickOutside } from '../ClickOutside';
+    import { clickOutside } from '../Actions/ClickOutside';
     let open = false;
 
     export let options:DropdownOption[] = [];

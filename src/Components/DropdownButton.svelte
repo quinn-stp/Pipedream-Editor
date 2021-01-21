@@ -7,7 +7,7 @@
 </script>
 
 <script>
-    import { clickOutside } from '../ClickOutside';
+    import { clickOutside } from '../Actions/ClickOutside';
 
     export let disabled:boolean = false;
     export let options:DropdownItem[] = [];

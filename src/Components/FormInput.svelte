@@ -16,7 +16,7 @@
 </div>
 
 <style>
-    @radius: 5px;
+    @import '../variables.less';
 
     .input-container {
         width: 100%;
@@ -29,25 +29,22 @@
         font-size: 0.8em;
         left: @radius * 2;
         top: 0;
-        background-color: var(--gray-1);
-        color: var(--gray-8);
+        background-color: var(--gray-0);
+        color: var(--gray-9);
         padding-left: 0.25em;
         padding-right: 0.25em;
     }
 
-    input[type=number],
-    input[type=text] {
-        width: 0;
+    input {
+        width: 5em;
         flex-grow: 1;
-        border-radius: @radius;
         background-color: unset;
-        border-width: 2px;
-        border-color: var(--gray-2);
-        color: inherit;
-    }
+        border-radius: 0;
+        border: @line-width solid var(--gray-9);
+        margin: 0;
 
-    input[type=number]:focus,
-    input[type=text]:focus {
-        border-color: var(--gray-5);
+        &:focus {
+            box-shadow: 2px 4px var(--gray-9);
+        }
     }
 </style>

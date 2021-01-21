@@ -37,7 +37,9 @@
             </div>
         {/each}
     </div>
-    <slot/>
+    <div class=content>
+        <slot/>
+    </div>
 </div>
 
 <style>
@@ -57,11 +59,18 @@
     }
 
     .container {
-        margin: 10px;
+        /* margin: @spacing * 2; */
+    }
+
+    .content {
+        margin: @spacing * 2;
     }
 
     .tabs-container {
         flex-direction: column;
+        padding: @spacing * 2;
+        background-color: var(--gray-1);
+        /* margin-right: @spacing * 2; */
     }
 
     .tab-block {
@@ -93,12 +102,11 @@
         max-height: @tab-size;
 
         color: var(--gray-9);
-        background-color: var(--gray-0);
+        background-color: var(--gray-1);
 
         border-radius: @tab-size * 0.5;
         border: @line-width solid var(--gray-9);
 
-        box-shadow: 2px 4px var(--gray-9);
 
         overflow: hidden;
         align-items: center;
@@ -111,6 +119,7 @@
 
         &:hover {
             max-width: unset;
+            box-shadow: 2px 4px var(--gray-9);
         }
     }
 </style>
